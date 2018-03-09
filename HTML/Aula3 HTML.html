@@ -1,0 +1,92 @@
+<html>
+<head>
+<script language="javascript">
+function valida (POST){
+if(POST.NOME.value==""W){
+alert("Por favor digite um nome, seu inútil do caralho ^^")
+return false
+}
+}
+</script>
+</head>
+<body>
+
+
+<form method ="POST" action="processa_dados.php" onSubmit="return valida(this)">
+
+<label> Qual seu nome: * </label> 
+<input name="NOME"  type="text" size="50" placeholder="joaozinho 
+da silva" maxlength="10"> 
+<br>
+<label> Digite sua idade: *</label> 
+<input type="number" name="Idade" min="18" max="60" value="19" required>
+<br>  
+<label>Digite seu email: </label> 
+<input type="email" name="email" >  
+
+<br>
+<label> Data de nascimento: </label>
+<input type="date" name="data"	>   
+<br> 	
+<label> Digite sexo ANAL: </label> 
+<select name="sexo" >
+<option value="M"> Masculino</option>
+<option value="F"> Feminino</option>
+<option value="O"> Outro </option> 
+</select>
+<br>
+<label> Esporte que pratica </label>
+<label> Maratona de séries </label>
+<input type="checkbox"name="maratona">
+<labe> Vários nadas </label>
+<input type="checkbox"name="nadas">
+<labe> Alguma coisa saudavel </label>
+<input type="checkbox"name="esporte">
+<br>
+<label> Sexo: </label> 
+<br>
+Masculino <input name="Sexo" type="radio" value="Masculino"> 
+<br>
+Feminino <input name="Sexo" type="radio" value="Feminino"> 
+<br>
+<textarea name="Comentarios" cols="20" rows="10">Comente aqui..  </textarea>
+<br>
+<input type="submit" value="Enviar">
+<input type="reset" value="Limpar Campos">
+<br>
+
+Avaliação do site 
+<label> O que achou desse site </label> <br>
+Muito bom <input name="aval" type="radio" value="MB"><br>
+Bom <input name="aval" type="radio" value="B"><br>
+Regular <input name="aval" type="radio" value="R"><br>
+Ruim <input name="aval" type="radio" value="RR"><br>
+Muito bosta <input name="aval" type="radio" value="MR"><br>
+<label> Diga-nos como entrar em contato com você</label><br>
+<br>
+<label> Qual seu nome: * </label> 
+<input name="NOME"  type="text" size="50" maxlength="10"> <br>
+<br>
+<label>Digite seu email: </label> 
+<input type="email" name="email" >
+<br>
+<label> RG: </label>
+<input name="RG" type="number">
+<br>
+<label> Data de nascimento: </label>
+<input type="date" name="data"	>   
+<br> 	
+<labe> Quero receber novidades por e-mail </label>
+<input type="checkbox"name="Sim">
+<textarea name="Comentarios" cols="20" rows="10">Comente aqui..  </textarea>[
+<br>
+</form> 
+
+
+</body> 
+
+
+
+
+
+</html>

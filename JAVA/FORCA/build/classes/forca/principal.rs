@@ -1,0 +1,12 @@
+forca.principal$9
+forca.principal
+forca.principal$10
+forca.principal$6
+forca.principal$11
+forca.principal$5
+forca.principal$8
+forca.principal$7
+forca.principal$2
+forca.principal$1
+forca.principal$4
+forca.principal$3

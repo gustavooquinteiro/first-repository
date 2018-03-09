@@ -1,0 +1,79 @@
+<html>
+<head>
+<script language="javascript">
+function valida (POST){
+	if(POST.NOME.value==""){
+		alert("Por favor digite um nome, seu inútil ^^");
+	return false;}
+	if(POST.sexo[0].checked==false && formC.sexo[1].checked==false){
+		alert("VC NAO E ASSEXUADO, CARO SENHOR USUARIO, POR FAVOR SELECIONE UM SEXo");
+	return false;}
+	if(POST.senha.value!= POST.senha2.value){
+		alert("Senhas não conferem. Você digitou duas senhas ssdiferentes.");
+	return false;}
+}
+</script>
+</head>
+<body>
+
+
+<form method ="POST" action="page.php">
+
+<label> Qual seu nome: * </label> 
+<input name="NOME"  type="text" size="50" placeholder="joaozinho da silva"> 
+<br>
+<label>Digite seu CPF: *</label> <input name="CPF" type="text" pattern="[0-9]{11}"required>
+<br>
+<label> Digite sua idade: *</label> 
+<input type="number" name="Idade" min="18" max="60" value="19" required>
+<br>  
+<label>Digite seu email: </label> 
+<input type="email" name="email" >  
+<br>
+<label>Digite sua senha: </label>
+<input type="password" name="senha"><br>
+<label> Confirme sua senha: </label>
+<input type="password" name="senha2"><br>
+<br>
+<label> Data de nascimento: </label>
+<input type="date" name="data"	>   
+<br> 	
+<label> Selecione seu estado Civil* </label> 
+<select name="ec" >
+<option value="S"> Solteiro</option>
+<option value="C"> Casado</option>
+<option value="D"> Divorciado</option>
+<option value="E"> Separado</option>
+<option value="V"> Viúvo </option> 
+<option value="U"> União estável </option> 
+<option value="R"> Religioso </option> 
+</select>
+<br>
+<label> Sexo: </label> 
+<br>
+Masculino <input name="Sexo" type="radio" value="Masculino"> 
+<br>
+Feminino <input name="Sexo" type="radio" value="Feminino"> 
+<br>
+<input type="submit" value="Enviar">
+<input type="reset" value="Limpar Campos">
+<br>
+
+
+<label> Quero receber novidades por e-mail </label>
+<input type="checkbox"name="Sim">
+<textarea name="Comentarios" cols="20" rows="10">Comente aqui..  </textarea>[
+<br>
+</form> 
+
+<br>
+Toda variavel PHP começa obrigatoriamente com $
+<br>
+Hacker mode actived  
+</body> 
+
+
+
+
+
+</html>
